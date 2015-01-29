@@ -400,23 +400,68 @@ plt.savefig("amzon-ko-hex")
 				<section>
 					<h2>
 					</h2>
+					<p>You can use the excellent Pandas file reader without putting it into a Dataframe.
+					</p>
+					<br />
+					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/price-of-a-dozen-eggs-19001993-i.csv">Here's the data</a></p>
+<pre><code>
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data1 = pd.read_csv('price-of-a-dozen-eggs-19001993-i.csv')
+plt.figure()
+plt.plot(data1.Price)
+plt.savefig('price-of-eggs-no-err')
+</code></pre>
+				</section>
+
+				<section>
+					<h2>The output:
+					</h2>
 					<p>
 					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/price-of-eggs-no-err.png" alt="" style="width: 700px;"/>
 				</section>
 
 				<section>
 					<h2>
 					</h2>
-					<p>
+					<p>Let's do something a little more impressive.
 					</p>
 				</section>
 
 				<section>
-					<h2>
+					<h2>Error bars!
 					</h2>
 					<p>
 					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/price-of-eggs.png" alt="" style="width: 700px;"/>
 				</section>
+
+				<section>
+					<h2>Here's the code:
+					</h2>
+					<p>
+					</p>
+<pre><code>
+#eggs_line.py
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv('price-of-a-dozen-eggs-19001993-i.csv')
+
+price = pd.Series(data.Price)
+ma = pd.rolling_mean(price, 10, center=True)
+mstd = pd.rolling_std(price, 10, center=True)
+
+plt.figure()
+plt.plot(data.Price)
+plt.fill_between(mstd.index, ma-2*mstd, ma+2*mstd, color='b', alpha=0.2)
+plt.savefig('price-of-eggs')
+</code></pre>
+
+			  </section>
 
 				<section>
 					<h2>

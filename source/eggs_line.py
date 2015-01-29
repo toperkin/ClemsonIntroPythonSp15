@@ -1,6 +1,5 @@
 __author__ = 'tony'
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 data = pd.read_csv('price-of-a-dozen-eggs-19001993-i.csv')
