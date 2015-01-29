@@ -76,7 +76,6 @@
 				</video>
 				</section>
 
-
 				<section>
 					<h2>Why Python?</h2>
 				</section>
@@ -86,7 +85,6 @@
 					<p>Simple syntax and extremely versitle.</p>
 				</section>
 
-
 				<section>
 					<h2>Descent performance.</h2>
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/julia-bench.png" alt="Julia logo"/>
@@ -94,8 +92,6 @@
 						<p>C preformance = 1</p>
 
 				</section>
-
-
 
 				<section>
 					<ul>
@@ -112,7 +108,7 @@
 				</section>
 
 				<section>
-					<h3>An pretty decent IDE to write and run your code.</h3>
+					<h3>A pretty decent IDE to write and run your code.</h3>
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/Spyder_logo.png" alt="" style="width: 500px;"/>
 				</section>
 
@@ -123,94 +119,9 @@
 				</section>
 
 
-				<section>
-					<h2>Homework</h2>
-					<p>I'll post a file "hw1.py" for you to test your installation against.</p>
-				</section>
 
 				<section>
-					<h3>Perhaps a little <a href="http://julialang.org/">Julia</a> too - optional</h3>
-					<img src="http://toperkin.github.io/NumericalMethods/images-lect1/julia.png" alt="Julia logo" style="width: 500px;"/>
-				</section>
-
-				<section>
-					<h2>Julia</h2>
-					<img src="http://toperkin.github.io/NumericalMethods/images-lect1/julia-bench.png" alt="Julia logo"/>
-					<ul>
-						<li>C preformance = 1</li>
-						<li>New language out of MIT.  Very well adapted to numerical methods/scientific computing.  Looks a lot like python.</li>
-					</ul>
-				</section>
-
-				<section>
-					<h3>Or even some <a href="http://clojure.org/">Clojure</a></h3>
-					<img src="http://toperkin.github.io/NumericalMethods/images-lect1/clojure.png" alt="Clojure logo" style="width: 500px;"/>
-					<p>I have a soft spot for functional languages.</p>
-				</section>
-
-				<section>
-					<h2>Grading</h2>
-					<ul>
-						<li>Homework - 40%</li>
-						<li>Mid-term - 20%</li>
-						<li>Project - 30%</li>
-						<li>Response to presentations - 10%</li>
-						<li>Final - (up to 10% bonus)</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Homework</h2>
-					<ul>
-						<li>[20%] Programming assignments</li>
-						<p>Every assignment comes with options for <b>bonus</b>:</p>
-						<ul>
-							<li>A Julia or Clojure version of the assignment</li>
-							<li>Feature implementation, e.g. Animations, Users interactivity, Improved algorithm</li>
-							<li>SymPy research for algorithm which implements an exact solver and comparision.</li>
-							<li>In general, extra points for any work which extends the assignment</li>
-						</ul>
-						<li>[20%] Written problem sets</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Mid-term</h2>
-					<ul>
-						<li>[20%] 11th week of class - March 26</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Final Project</h2>
-					<ul>
-						<li>[20%] +3pgs (11pts, single spaced, 1in margins - page count not including bibliography, source code of experiment, or graphics):  The student will report: First, information he/she had obtained about the historical context of the paper, including biographical information about the author(s) and a plot of citations as a function of time. Second, a mathematical discussion of some of the central ideas of the paper.  Third, the results of Python experiments conducted to illustrate some of the properties of the algorithm under discussion. </li>
-					 <li>[10%] presentation: 30 min talk on above (last three weeks of class)</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Response to presentations</h2>
-					<ul>
-						<li>[10%] written assessment of the presentations (due at scheduled time of final).</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Final</h2>
-					<ul>
-						<li>[Optional Bonus: +10%] A cummulative exam - May 1, 12 – 2 pm</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>A problem. Example Julia.</h2>
-					<p>Julia is dynamically typed, but the types are fixed~ish and this lets C-type errors sneak in.</p>
-					<p>The closer to machine code you get, the faster your code will be run
-					because you have more control and can optimize.  However "with great power, comes
-					great responsibility."  Which means in Fortran, C, Julia... you can get into hot water.</p>
-
-<pre><code>#julia
+<pre><code>#python
 #factorial_example.jl
 
 function fact(n)
@@ -227,93 +138,8 @@ for n =10:21
 				</section>
 
 				<section>
-					<h2>The output:</h2>
-<pre><code>
-> julia factorial_example.jl
-
-The Factorial of 10 is 3628800
-The Factorial of 11 is 39916800
-The Factorial of 12 is 479001600
-The Factorial of 13 is 6227020800
-The Factorial of 14 is 87178291200
-The Factorial of 15 is 1307674368000
-The Factorial of 16 is 20922789888000
-The Factorial of 17 is 355687428096000
-The Factorial of 18 is 6402373705728000
-The Factorial of 19 is 121645100408832000
-The Factorial of 20 is 2432902008176640000
-The Factorial of 21 is -4249290049419214848
-</code></pre>
-				</section>
-
-				<section>
-					<h2>Under the hood:</h2>
-
-<pre><code>#julia
-# fact_explained.jl
-println("The smallest integer Julia handles is  ", typemin(Int64), "\n" )
-
-println("The largest integer Julia handles is  ", typemax(Int64), "\n"  )
-
-println("A little too small and stuff goes wrong  " , typemin(Int64) - 1, "\n" )
-
-println("A little too big also ruins your world  ", typemax(Int64) +1, "\n" )
-</code></pre>
-				</section>
-
-				<section>
-					<h2>Here is the output:</h2>
-<pre><code>
-> julia fact_explained.jl
-
-The smallest integer Julia handles is  -9223372036854775808
-
-The largest integer Julia handles is  9223372036854775807
-
-A little too small and stuff goes wrong  9223372036854775807
-
-A little too big also ruins your world  -9223372036854775808
-</code></pre>
-				</section>
-
-				<section>
-				<h2>Of course, in the real world this never comes up, right?</h2>
-				</section>
-
-				<section>
-					<h2>Patriot Missle</h2>
-				<p>The <a href="https://www.ima.umn.edu/~arnold/disasters/patriot.html">Patriot Missile failure</a>, in Dharan, Saudi Arabia, on February 25, 1991 which resulted in 28 deaths, is ultimately attributable to poor handling of rounding errors.</p>
-				</section>
-
-				<section>
-					<h2>Spleipner A</h2>
-					<p>The <a href="https://www.ima.umn.edu/~arnold/disasters/sleipner.html">sinking of the Sleipner A</a> offshore platform in Gandsfjorden near Stavanger, Norway, on August 23, 1991, resulted in a loss of nearly one billion dollars. It was found to be the result of inaccurate finite element analysis.</p>
-				</section>
-
-				<section>
-					<h2>Ariane 5 rocket</h2>
-					<p>The <a href="http://www.around.com/ariane.html">explosion of the Ariane 5 rocket</a> just after lift-off on its maiden voyage off French Guiana, on June 4, 1996, was ultimately the consequence of a simple overflow.</p>
-				</section>
-
-				<section>
-				<h2>It's time to get started!</h2>
-				</section>
-
-				<section>
-					<h2>Getting started</h2>
-					<p>Getting up and running is done in only a few steps:</p>
-					<ol>
-						<li> Install <a href="http://www.continuum.io/">Anaconda python</a> version 3.4 or better.</li>
-						<li>Code discussed in lectures and assignments can be found on my  <a href="https://github.com/toperkin/NumericalMethodsCourseCode">Github</a> account.</li>
-						<li>Fill in the <b>TODO</b> statements and run <b>hw1.py</b></li>
-						<li>Check out the offical course <a href="http://toperkin.github.io/nm.html">page</a> for an outline and details of the final project.</li>
-						<li>Skim over Chapters 1 and 2 from our  <a href="http://www.ams.org/bookstore-getitem/item=amstext-2">text</a></li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>That's all folks (for now)!</h2>
-					<p>These slides were prepared by <a href="http://toperkin.github.io/NumericalMethods/lect1.html">Tony Perkins</a></p>
+					<h2>That's all folks!</h2>
+					<p>These slides were prepared by <a href="http://toperkin.github.io/">Tony Perkins</a></p>
 				</section>
 			</div>
 		</div>
