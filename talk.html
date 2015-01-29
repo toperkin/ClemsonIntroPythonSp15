@@ -99,7 +99,7 @@
 								<li>Matplotlib - Great graphing!</li>
 								<li>NumPy - Numerical Linear algebra.  Really convenent array notation.</li>
 								<li>SciPy - Numerical ODE solvers, stats, basically all the math you could want that isn't already in NumPy</li>
-								<li>Pandas - Data manulation.  More graphing tools. More stats.</li>
+								<li>Pandas - Data manipulation.  More graphing tools. More stats.</li>
 							</ul>
 					</ul>
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/continuum_analytics_logo.png" alt="Continuum Analytics logo" style="width: 500px;"/>
@@ -116,7 +116,6 @@
 					<p>It is free for students and educators.  Probably overkill at this point.</p>
 				</section>
 
-
 				<section>
 					<h2>Tools
 					</h2>
@@ -127,7 +126,6 @@
 						<li><a href="http://pandas.pydata.org/">Pandas</a>:  the Python Data Analysis library. Importing complex data and doing fancy things with it.</li>
 					</ul>
 				</section>
-
 
 				<section>
 					<h2>Let's get to it.</h2>
@@ -174,9 +172,6 @@ fig.savefig("numpy_graphing1.png")
 </code></pre>
 				</section>
 
-
-
-
 				<section>
 					<h2>
 					</h2>
@@ -198,7 +193,6 @@ fig.savefig("numpy_graphing1.png")
 					</h2>
 					<p>
 					</p>
-
 <pre><code data-trim contenteditable>
 #numpy_graphing.py continued...
 
@@ -327,16 +321,80 @@ fig2.savefig('numpy_graphing2')
 
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 
+plt.figure()
 data = pd.read_csv('kzn1993.csv')
 df2 = pd.DataFrame(data, columns=['meaneduc', 'cm_16_exp'])
 df2.plot(kind='hexbin', x='meaneduc', y='cm_16_exp', gridsize=35)
 plt.savefig('hex_scatter2.png')
 
 </code></pre>
+				</section>
 
+				<section>
+					<h2>
+					</h2>
+					<p>That was fun.  I'll generate another with some random data.
+					</p>
+<pre><code data-trim contenteditable>
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
+plt.figure()
+
+df = pd.DataFrame(np.random.randn(1000, 2), columns=['a', 'b'])
+df['b'] = df['b'] + np.arange(1000)
+df.plot(kind='hexbin', x='a', y='b', gridsize=25)
+plt.savefig('hex_scatter.png')
+</code></pre>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>Here's the same graph as a hexbin:
+					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/hex_scatter1.png" alt="" style="width: 700px;"/>
+				</section>
+
+				<section>
+					<h2>Pandas Dataframe
+					</h2>
+					<p>This powerful datastructure is extremely useful for data analysis and manipulation.  We'll talk about it some more later.  But for now, I just want to mention that it's possible to go back and forth from NumPy arrays to Dataframes.
+					</p>
+				</section>
+
+				<section>
+					<h2>An example.
+					</h2>
+					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/AMZN-KO">Here's some data<a>
+					</p>
+<pre><code>
+#numpy_to_dataframe.py
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+data_amzn = np.genfromtxt("AMZN-KO/AMZN.csv", delimiter=",")
+data_ko = np.genfromtxt("AMZN-KO/KO.csv", delimiter=",")
+
+merged = np.concatenate((data_amzn[2:,1:3], data_ko[2:,1:3]), axis=1)
+df = pd.DataFrame(merged)
+
+plt.figure()
+df.plot(kind='hexbin',  x=0, y=2, gridsize=20)
+plt.savefig("amzon-ko-hex")
+</code></pre>
+				</section>
+
+				<section>
+					<h2>The output:
+					</h2>
+					<p>
+					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/amzon-ko-hex.png" alt="" style="width: 700px;"/>
 				</section>
 
 				<section>
@@ -365,22 +423,79 @@ plt.savefig('hex_scatter2.png')
 					</h2>
 					<p>
 					</p>
-				</section-->
+				</section>
 
 				<section>
-<pre><code>#python
-#factorial_example.jl
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
 
-function fact(n)
-    if n == 0
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+<pre><code>
+#factorial_example.py
+
+def fact(n):
+    if n <= 1
         return 1
-        end
     return n*fact(n-1)
-    end
-
-for n =10:21
-    println("The Factorial of " , n , " is ", fact(n))
-    end
 </code></pre>
 				</section>
 
