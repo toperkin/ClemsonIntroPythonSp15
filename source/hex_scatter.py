@@ -1,10 +1,7 @@
 __author__ = 'tony'
 
 import pandas as pd
-import datetime
-import random
 import matplotlib.pyplot as plt
-import pylab as pl
 import numpy as np
 
 plt.figure()
