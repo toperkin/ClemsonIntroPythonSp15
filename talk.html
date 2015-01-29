@@ -210,21 +210,21 @@ for k in range(1, len(A)):
         plt.plot(A[0], 27.21*A[k]-0.3)
 
 plt.title('Band')
-fig2.savefig(numpy_graphing2')
+fig2.savefig('numpy_graphing2')
 </code></pre>
 				</section>
 
 				<section>
 					<h2>
 					</h2>
-					<p>The output!
+					<p>The output:
 					</p>
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/numpy_graphing2.png" alt="" style="width: 700px;"/>
 				</section>
 
 
 				<section>
-					<h2>
+					<h2>I didn't see any Pandas.
 					</h2>
 					<p>
 					</p>
@@ -233,12 +233,12 @@ fig2.savefig(numpy_graphing2')
 				<section>
 					<h2>
 					</h2>
-					<p>
+					<p>Okay.  So Pandas has some really powerful data manipulation abilities that I'm not going to talk about right now.  I'm going to focus on <b>importing data</b> and <b>graphing</b> it.
 					</p>
 				</section>
 
-				<!--section>
-					<h2>
+				<section>
+					<h2>But first a rant!
 					</h2>
 					<p>
 					</p>
@@ -247,12 +247,20 @@ fig2.savefig(numpy_graphing2')
 				<section>
 					<h2>
 					</h2>
-					<p>
+					<p>I really don't like scatter plots.  They're stupid and lazy because they leave a lot of interesting information off that could easily be included.
 					</p>
 				</section>
 
 				<section>
-					<h2>
+					<h2>Here's a bad scatterplot I found online:
+					</h2>
+					<p>
+					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/bad_scatt.png" alt="" style="width: 700px;"/>
+				</section>
+
+				<section>
+					<h2>What don't I like?
 					</h2>
 					<p>
 					</p>
@@ -261,12 +269,33 @@ fig2.savefig(numpy_graphing2')
 				<section>
 					<h2>
 					</h2>
+					<p>Importantly, all the point are covering each other up and it's hard to tell how dense certain parts are.  Unimportantly this google graph just looks amateurish.
+					</p>
+				</section>
+
+				<section>
+					<h2>So, what do I like better?
+					</h2>
 					<p>
 					</p>
 				</section>
 
 				<section>
-					<h2>
+					<h2>HexBin plots!
+					</h2>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>Why?
+					</h2>
+					<p>Because hexagons are awesome.  Just ask the bees.
+					</p>
+				</section>
+
+				<section>
+					<h2>Fine show me.
 					</h2>
 					<p>
 					</p>
@@ -275,50 +304,39 @@ fig2.savefig(numpy_graphing2')
 				<section>
 					<h2>
 					</h2>
-					<p>
+					<p>Here's the same graph as a hexbin:
 					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/hex_scatter2.png" alt="" style="width: 700px;"/>
 				</section>
 
 				<section>
-					<h2>
+					<h2>Wow!  That must have taken a lot of typing?
 					</h2>
 					<p>
 					</p>
 				</section>
 
 				<section>
-					<h2>
+					<h2>Nope, and here's your Pandas:
 					</h2>
-					<p>
+					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/kzn1993.csv">Here's the data</a>
 					</p>
-				</section>
 
-				<section>
-					<h2>
-					</h2>
-					<p>
-					</p>
-				</section>
+<pre><code data-trim contenteditable>
+#hex_scatter.py
 
-				<section>
-					<h2>
-					</h2>
-					<p>
-					</p>
-				</section>
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
 
-				<section>
-					<h2>
-					</h2>
-					<p>
-					</p>
-				</section>
+data = pd.read_csv('kzn1993.csv')
+df2 = pd.DataFrame(data, columns=['meaneduc', 'cm_16_exp'])
+df2.plot(kind='hexbin', x='meaneduc', y='cm_16_exp', gridsize=35)
+plt.savefig('hex_scatter2.png')
 
-				<section>
-					<h2>
-					</h2>
-					<p>
-					</p>
+</code></pre>
+
+
 				</section>
 
 				<section>
