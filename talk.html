@@ -537,7 +537,6 @@ plt.savefig('line_w_error')
 						</p>
 						<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/percent-bachelors-degrees-women-usa.png" alt="" style="width: 500px;"/>
 					</section>
-				</section>
 
 				<section>
 					<h2>
@@ -546,34 +545,143 @@ plt.savefig('line_w_error')
 					</p>
 				</section>
 
+
+
 				<section>
-					<h2>Easy interactives</h2>
-					<p>Oh, and with a few more lines of code you can make your plot interactive.</p>
+					<p>You are running with a rough crowd and have higher dimensional data to display?</p>
 				</section>
 
 				<section>
-					<iframe id="igraph"  src="https://plot.ly/~Dreamshot/495/percentage-of-bachelors-degrees-conferred-to-women-in-the-usa-by-major-1970-2012/" width="700" height="600"></iframe>
+					<p>Here's some obvious things you can do:</p>
 				</section>
+
+				<section>
+					<p>
+					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/mpl1.png" alt="" style="width: 500px;"/>
+				</section>
+
+
+			<section>
+				<p>
+				</p>
+				<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/mpl2.png" alt="" style="width: 500px;"/>
+			</section>
+
+
+		<section>
+			<p>
+			</p>
+			<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/mpl3.png" alt="" style="width: 500px;"/>
+		</section>
+
+<section>
+	<h2>Want higher?</h2>
+</section>
+
+
+<section>
+	<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/iris.data">Here's some high dimensional data.</a></p>
+</section>
+
+<section>
+<p>and some code</p>
+<pre><code>
+#4d.py
+
+import matplotlib.pyplot as plt
+from pandas import read_csv
+from pandas.tools.plotting import andrews_curves
+
+data = read_csv('iris.data')
+plt.figure()
+
+andrews_curves(data, 'Name')
+
+plt.savefig('andrews')
+</code></pre>
+</section>
+
+<section>
+	<h2>The output:</h2>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/andrews.png" alt="" style="width: 500px;"/>
+</section>
+
+<section>
+	<h2>More pictures!</h2>
+</section>
+
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab1.png" alt="" style="width: 500px;"/>
+</section>
+
+
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab2.png" alt="" style="width: 500px;"/>
+</section>
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab3.png" alt="" style="width: 500px;"/>
+</section>
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab4.png" alt="" style="width: 500px;"/>
+</section>
+
+
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab5.png" alt="" style="width: 500px;"/>
+</section>
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab6.png" alt="" style="width: 500px;"/>
+</section>
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/seab7.png" alt="" style="width: 500px;"/>
+</section>
+
+
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/bokeh1.png" alt="" style="width: 500px;"/>
+</section>
+
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/bokeh2.png" alt="" style="width: 500px;"/>
+</section>
+
+<section>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/bokeh3.png" alt="" style="width: 500px;"/>
+</section>
+
+
 
 				<section>
 					<p>A few more libraries to consider looking into.</p><br />
 					<ul>
 						<li>Seaborn: has a more refined color palette by default and advanced stats and plotting features.</li>
-					  <li>Bokeh: interactive python graphics for the web.</li>
+						<li>Bokeh: interactive python graphics for the web.</li>
 					</ul>
 				</section>
 
-
-				<section>
-<pre><code>
-#factorial_example.py
-
-def fact(n):
-    if n <= 1
-        return 1
-    return n*fact(n-1)
-</code></pre>
-				</section>
 
 				<section>
 					<h2>That's all folks!</h2>
