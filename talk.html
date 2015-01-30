@@ -477,7 +477,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-price = pd.Series(np.random.randn(150).cumsum(), index=pd.date_range('2000-1-1', periods=150, freq='B'))
+price = pd.Series(np.random.randn(150).cumsum(),
+    index=pd.date_range('2000-1-1', periods=150, freq='B'))
 ma = pd.rolling_mean(price, 20)
 mstd = pd.rolling_std(price, 20)
 plt.figure()
@@ -505,75 +506,27 @@ plt.savefig('line_w_error')
 				<section>
 					<h2>
 					</h2>
-					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/precent-bachelors-degrees-women-usa.csv">I found some data I want to display</a>
+					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/percent-bachelors-degrees-women-usa.csv">I found some data I want to display</a>
 					</p>
 				</section>
 
 				<section>
 					<h2>
 					</h2>
-					<p>
+					<p><a href="https://github.com/toperkin/ClemsonIntroPythonSp15/blob/gh-pages/source/line_min.py">This code is a little long so lets just few it on github.</a>
 					</p>
-<pre><code>
-#line_min.py
-
-from pandas import read_csv
-from matplotlib.pyplot import *
-
-gender_degree_data = read_csv("percent-bachelors-degrees-women-usa.csv")
-
-figure()
-
-majors = ['Health Professions', 'Public Administration', 'Education', 'Psychology',
-    'Foreign Languages', 'English', 'Communications\nand Journalism',
-    'Art and Performance', 'Biology', 'Agriculture',
-    'Social Sciences and History', 'Business', 'Math and Statistics',
-    'Architecture', 'Physical Sciences', 'Computer Science',
-    'Engineering']
-
-for rank, column in enumerate(majors):
-    plot(gender_degree_data.Year.values,
-    gender_degree_data[column.replace("\n", " ")].values,
-    lw=2.5)
-
-    y_pos = gender_degree_data[column.replace("\n", " ")].values[-1] - 0.5
-
-    if column == "Foreign Languages":
-        y_pos += 0.5
-    elif column == "English":
-        y_pos -= 0.5
-    elif column == "Communications\nand Journalism":
-        y_pos += 0.75
-    elif column == "Art and Performance":
-        y_pos -= 0.25
-    elif column == "Agriculture":
-        y_pos += 1.25
-    elif column == "Social Sciences and History":
-        y_pos += 0.25
-    elif column == "Business":
-        y_pos -= 0.75
-    elif column == "Math and Statistics":
-        y_pos += 0.75
-    elif column == "Architecture":
-        y_pos -= 0.75
-    elif column == "Computer Science":
-        y_pos += 0.75
-    elif column == "Engineering":
-        y_pos -= 0.25
-
-    text(2011.5, y_pos, column)
-
-text(1995, 93, "Percentage of Bachelor's degrees conferred to women in the U.S.A."
-     ", by major (1970-2012)", fontsize=17, ha="center")
-
-text(1966, -8, "Data source: nces.ed.gov/programs/digest/2013menu_tables.asp", fontsize=10)
-
-savefig("percent-bachelors-degrees-women-usa_minimum.png", bbox_inches="tight")
-</code></pre>
 				</section>
 
 				<section>
-					<h2>
+					<h2>The output:
+					</h2>
+					<p>
+					</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/percent-bachelors-degrees-women-usa_minimum.png" alt="" style="width: 700px;"/>
+				</section>
+
+				<section>
+					<h2>Yum, let's see if we can't clean this up some more.
 					</h2>
 					<p>
 					</p>
@@ -584,27 +537,26 @@ savefig("percent-bachelors-degrees-women-usa_minimum.png", bbox_inches="tight")
 					</h2>
 					<p>
 					</p>
+					<section>
+						<h2>The output:
+						</h2>
+						<p>
+						</p>
+						<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/percent-bachelors-degrees-women-usa.png" alt="" style="width: 700px;"/>
+					</section>
 				</section>
 
 				<section>
 					<h2>
 					</h2>
-					<p>
+					<p><a href="https://github.com/toperkin/ClemsonIntroPythonSp15/blob/gh-pages/source/lines1.py">Let's go back to github to see how I did it.</a>
 					</p>
 				</section>
 
 				<section>
-					<h2>
-					</h2>
-					<p>
-					</p>
-				</section>
-
-				<section>
-					<h2>
-					</h2>
-					<p>
-					</p>
+					<h2>Easy interactives</h2>
+					<p>Oh, and with a few more lines of code you can make your plot interactive.</p>
+					<p><iframe id="igraph" src="https://plot.ly/~Dreamshot/495/percentage-of-bachelors-degrees-conferred-to-women-in-the-usa-by-major-1970-2012/" width="873" height="810"></iframe></p>
 				</section>
 
 				<section>
