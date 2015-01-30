@@ -22,7 +22,7 @@
     <SUITE FILE_PATH="coverage/source$numpy_to_dataframe.coverage" NAME="numpy_to_dataframe Coverage Results" MODIFIED="1422557076619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$lines1.coverage" NAME="lines1 Coverage Results" MODIFIED="1422497603760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$line_w_error.coverage" NAME="line_w_error Coverage Results" MODIFIED="1422503495509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/source$4d.coverage" NAME="4d Coverage Results" MODIFIED="1422500965939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/source$4d.coverage" NAME="4d Coverage Results" MODIFIED="1422575622713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,22 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="4d.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/4d.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="e#21#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="lines1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lines1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1563" max-vertical-offset="1950">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
               <caret line="124" column="50" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="70" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -60,13 +48,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eggs_line.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eggs_line.py">
+      <file leaf-file-name="line_min.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/line_min.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42635658" vertical-offset="0" max-vertical-offset="387">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.45736435" vertical-offset="453" max-vertical-offset="840">
+              <caret line="42" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="79" />
               <folding>
-                <element signature="e#20#39#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -176,27 +164,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.numpy_to_dataframe">
-    <configuration default="false" name="line_w_error" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="source" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/line_w_error.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.4d">
     <configuration default="false" name="eggs_line" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,6 +239,26 @@
       <module name="source" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/numpy_to_dataframe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="4d" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="source" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4d.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -487,19 +475,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.hex_scatter" />
-      <item index="1" class="java.lang.String" itemvalue="Python.line_w_error" />
-      <item index="2" class="java.lang.String" itemvalue="Python.eggs_line" />
-      <item index="3" class="java.lang.String" itemvalue="Python.egg_no_err" />
-      <item index="4" class="java.lang.String" itemvalue="Python.numpy_graphing" />
-      <item index="5" class="java.lang.String" itemvalue="Python.numpy_to_dataframe" />
+      <item index="1" class="java.lang.String" itemvalue="Python.eggs_line" />
+      <item index="2" class="java.lang.String" itemvalue="Python.egg_no_err" />
+      <item index="3" class="java.lang.String" itemvalue="Python.numpy_graphing" />
+      <item index="4" class="java.lang.String" itemvalue="Python.numpy_to_dataframe" />
+      <item index="5" class="java.lang.String" itemvalue="Python.4d" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.numpy_to_dataframe" />
-        <item index="1" class="java.lang.String" itemvalue="Python.numpy_graphing" />
-        <item index="2" class="java.lang.String" itemvalue="Python.egg_no_err" />
-        <item index="3" class="java.lang.String" itemvalue="Python.eggs_line" />
-        <item index="4" class="java.lang.String" itemvalue="Python.line_w_error" />
+        <item index="0" class="java.lang.String" itemvalue="Python.4d" />
+        <item index="1" class="java.lang.String" itemvalue="Python.numpy_to_dataframe" />
+        <item index="2" class="java.lang.String" itemvalue="Python.numpy_graphing" />
+        <item index="3" class="java.lang.String" itemvalue="Python.egg_no_err" />
+        <item index="4" class="java.lang.String" itemvalue="Python.eggs_line" />
       </list>
     </recent_temporary>
   </component>
@@ -629,13 +617,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/line_min.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6279069" vertical-offset="0" max-vertical-offset="840">
-          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/percent-bachelors-degrees-women-usa.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -661,13 +642,6 @@
     <entry file="file://$PROJECT_DIR$/price-of-eggs.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line_w_error.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19379845" vertical-offset="0" max-vertical-offset="387">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/price-of-a-dozen-eggs-19001993-i.csv">
@@ -744,16 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/amzon-ko-hex.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -787,16 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lines1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1563" max-vertical-offset="1950">
-          <caret line="124" column="50" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/numpy_to_dataframe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.503876" vertical-offset="0" max-vertical-offset="387">
@@ -817,12 +771,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/line_w_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="387">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42635658" vertical-offset="0" max-vertical-offset="387">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="e#21#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eggs_line.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42635658" vertical-offset="0" max-vertical-offset="387">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#20#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lines1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1563" max-vertical-offset="1950">
+          <caret line="124" column="50" selection-start-line="124" selection-start-column="50" selection-end-line="124" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_min.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45736435" vertical-offset="453" max-vertical-offset="840">
+          <caret line="42" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
