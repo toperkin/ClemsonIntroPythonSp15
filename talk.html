@@ -387,39 +387,6 @@ plt.savefig('pd_text_import2')
 				<section>
 					<h2>
 					</h2>
-					<p>Let's scale it like last time and remove this useless legend.
-					</p>
-<pre><code data-trim contenteditable>
-#pandas_text_import.py
-
-import matplotlib.pyplot as plt
-import pandas as pd
-
-data = pd.read_table("band.data", sep=" ", header=None)
-data = data.dropna(axis=1, how='all')
-
-def scale(x):
-  return 27.21*x-0.3
-
-data[1:] = data[1: ].apply(scale)
-
-plt.figure()
-data.plot(x=2, legend=False)
-plt.savefig('pd_text_import2')
-</code></pre>
-				</section>
-
-				<section>
-					<h2>
-					</h2>
-					<p>The output:
-					</p>
-					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/pd_text_import3.png" alt="" style="width: 700px;"/>
-				</section>
-
-				<section>
-					<h2>
-					</h2>
 					<p>Lastly, let's select the columns with min$\ge -2$ and max$\le 3$ as before.
 					</p><br />
 					<p>Warning:  I'm not going to do this the slickest possible way.  Instead I'm going for what I hope will be the way that makes the most sense.</p>
@@ -577,7 +544,7 @@ plt.savefig('pd_text_import2')
 				</section>
 
 				<section>
-					<h2>Nope, and here's your Pandas:
+					<h2>Nope. Thank you Pandas!
 					</h2>
 					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/kzn1993.csv">Here's the data</a>
 					</p>
@@ -666,7 +633,7 @@ plt.savefig("amzon-ko-hex")
 				<section>
 					<h2>
 					</h2>
-					<p>You can use the excellent Pandas file reader without putting it into a Dataframe.
+					<p>Let's play with a line graph.
 					</p>
 					<br />
 					<p><a href="https://raw.githubusercontent.com/toperkin/ClemsonIntroPythonSp15/gh-pages/source/price-of-a-dozen-eggs-19001993-i.csv">Here's the data</a></p>
@@ -717,18 +684,16 @@ plt.savefig('price-of-eggs-no-err')
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('price-of-a-dozen-eggs-19001993-i.csv')
+data = pd.Series.from_csv('price-of-a-dozen-eggs-19001993-i.csv', header=0)
 
-price = pd.Series(data.Price)
-ma = pd.rolling_mean(price, 10, center=True)
-mstd = pd.rolling_std(price, 10, center=True)
+ma = pd.rolling_mean(data, 10, center=True)
+mstd = pd.rolling_std(data, 10, center=True)
 
 plt.figure()
-plt.plot(data.Price)
+plt.plot(data.index, data)
 plt.fill_between(mstd.index, ma-2*mstd, ma+2*mstd, color='b', alpha=0.2)
 plt.savefig('price-of-eggs')
 </code></pre>
-
 			  </section>
 
 				<section>
@@ -761,6 +726,143 @@ plt.savefig('line_w_error')
 					</p>
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/line_w_error.png" alt="" style="width: 700px;"/>
 				</section>
+
+<section>
+	<h2></h2>
+	<p>Alright.  I want to go back to the 'eggs' graph and see if I can pretty it up a little.</p><br />
+	<p>Did I mention because you are using python to graph you can control every aspect of it's appearance?</p>
+</section>
+
+<section>
+	<p>Here's the 'eggs' with error bars.</p>
+<pre><code>
+#eggs_line.py
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.Series.from_csv('price-of-a-dozen-eggs-19001993-i.csv', header=0)
+
+ma = pd.rolling_mean(data, 10, center=True)
+mstd = pd.rolling_std(data, 10, center=True)
+
+plt.figure()
+plt.plot(data.index, data)
+plt.fill_between(mstd.index, ma-2*mstd, ma+2*mstd, color='b', alpha=0.2)
+plt.savefig('price-of-eggs')
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step i.</p>
+<pre><code>
+# You typically want your plot to be ~1.33x wider than tall.
+# Common sizes: (10, 7.5) and (12, 9)
+plt.figure(figsize=(12, 9))
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step ii.</p>
+<pre><code>
+# Remove the plot frame lines. They are unnecessary chartjunk.
+ax = plt.subplot(111)
+ax.spines["top"].set_visible(False)
+ax.spines["right"].set_visible(False)
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step iii.</p>
+<pre><code>
+# Ensure that the axis ticks only show up on the bottom and left of the plot.
+# Ticks on the right and top of the plot are generally unnecessary chartjunk.
+ax.get_xaxis().tick_bottom()
+ax.get_yaxis().tick_left()
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step iv.</p>
+<pre><code>
+# Along the same vein, make sure your axis labels are large
+# enough to be easily read as well. Make them slightly larger
+# than your axis tick labels so they stand out.
+plt.ylabel("Price of eggs", fontsize=16)
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step v.</p>
+<pre><code>
+# Use matplotlib's fill_between() call to create error bars.
+# Use the dark blue "#3F5D7D" as a nice fill color.
+plt.fill_between(mstd.index, ma-2*mstd, ma+2*mstd, color='#3F5D7D')
+</code></pre>
+</section>
+
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step vi.</p>
+<pre><code>
+# Plot the original data as a white line in between the error bars.
+# White stands out best against the dark blue.
+plt.plot(data.index, data, color="white", lw=2)
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step vii.</p>
+<pre><code>
+# Make a title big enough so it spans the entire plot, but don't make it
+# so big that it requires two lines to show.
+plt.title("Price of eggs by year", fontsize=22)
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step viii.</p>
+<pre><code>
+# Always include your data source(s) and copyright notice! And for your
+# data sources, tell your viewers exactly where the data came from,
+# preferably with a direct link to the data. Just telling your viewers
+# that you used data from the "U.S. Census Bureau" is completely useless:
+# the U.S. Census Bureau provides all kinds of data, so how are your
+# viewers supposed to know which data set you used?
+plt.xlabel("\nData source: https://datamarket.com/data/set/22tq/price-of-a-dozen-eggs-1900-1993-in-constant | "
+					"Author: Tony Perkins", fontsize=10)
+</code></pre>
+</section>
+
+<section>
+	<h2>How can we make it pretty? </h2>
+	<p>step ix.</p>
+<pre><code>
+# Finally, save the figure as a PNG.
+# You can also save it as a PDF, JPEG, etc.
+# Just change the file extension in this call.
+# bbox_inches="tight" removes all the extra whitespace on the edges of your plot.
+plt.savefig('pretty-eggs', bbox_inches="tight")
+</code></pre>
+</section>
+
+<section>
+	<h2>The output:
+	</h2>
+	<p>
+	</p>
+	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/pretty_eggs.png" alt="" style="width: 700px;"/>
+</section>
+
+
 
 				<section>
 					<h2>Let's try doing something a little bigger!
