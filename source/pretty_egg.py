@@ -38,7 +38,7 @@ plt.plot(data.index, data, color="white", lw=2)
 
 # Make the title big enough so it spans the entire plot, but don't make it
 # so big that it requires two lines to show.
-plt.title("Price of eggs by year", fontsize=22)
+plt.title("Price of a dozen eggs by year", fontsize=22)
 
 
 # Always include your data source(s) and copyright notice! And for your
