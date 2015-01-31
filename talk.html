@@ -366,7 +366,7 @@ data = pd.read_table("band.data", sep=" ", header=None)
 data = data.dropna(axis=1, how='all')
 
 def scale(x):
-		return 27.21*x-0.3
+  return 27.21*x-0.3
 
 data[1:] = data[1: ].apply(scale)
 
@@ -399,7 +399,7 @@ data = pd.read_table("band.data", sep=" ", header=None)
 data = data.dropna(axis=1, how='all')
 
 def scale(x):
-		return 27.21*x-0.3
+  return 27.21*x-0.3
 
 data[1:] = data[1: ].apply(scale)
 
@@ -426,6 +426,7 @@ plt.savefig('pd_text_import2')
 				</section>
 
 				<section>
+					<p>The beginning is the same</p>
 <pre><code data-trim contenteditable>
 #pandas_text_import.py
 
@@ -436,20 +437,25 @@ data = pd.read_table("band.data", sep=" ", header=None)
 data = data.dropna(axis=1, how='all')
 
 def scale(x):
-		return 27.21*x-0.3
+  return 27.21*x-0.3
 
 data[1:] = data[1: ].apply(scale)
+</code></pre>
+				</section>
 
+				<section>
+	<p>Here is the second half, which restricts which columns get plotted.</p>
+<pre><code data-trim contenteditable>
 plt.figure()
 i=0
 for col in data.columns:
-		if col != 2:
-				if data[col].min() > -2 and data[col].max() < 3:
-						if i==0:
-								ax = data.plot(x=2, y=col, legend=False)
-								i=1
-						else:
-								data.plot(x=2, y=col, legend=False, ax=ax)
+  if col != 2:
+    if data[col].min() > -2 and data[col].max() < 3:
+      if i==0:
+        ax = data.plot(x=2, y=col, legend=False)
+        i=1
+      else:
+        data.plot(x=2, y=col, legend=False, ax=ax)
 
 plt.savefig('pd_text_import2')
 </code></pre>
