@@ -43,12 +43,21 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
+					<h1>#Numerical Methods in Python</h1>
+					<h3>Bonus topic: Pandas</h3>
+					<p>
+						<small>By <a href="http://toperkin.github.io/">Tony Perkins</a></small>
+					</p>
+				</section>
+
+
+				<!--section>
 					<h1>Intro to Python</h1>
 					<h3>Clemson University, Spring 2015</h3>
 					<p>
 						<small>By <a href="http://toperkin.github.io/">Tony Perkins</a></small>
 					</p>
-				</section>
+				</section-->
 
 				<section>
 					<p>Programming is frusterating.</p>
@@ -61,7 +70,7 @@
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/typing2.gif" alt="" style="width: 1000px;">
 				</section>
 
-				<section>
+				<!--section>
 					<video width='720' height='540' preload='none' controls poster = 'http://toperkin.github.io/ClemsonIntroPythonSp15/assets/particle-022.png'>
 						<source src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/particle.ogv" type="video/ogv">
 						<source src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/particle.webm" type="video/webm">
@@ -114,7 +123,28 @@
 					<h3>I prefer PyCharm</h3>
 					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/pycharm_logo.png" alt="" style="width: 500px;"/>
 					<p>It is free for students and educators.  Probably overkill at this point.</p>
+				</section-->
+				<section>
+					<h2>Topics:</h2>
+					<ol>
+						<li>GRAPHING!!!</li>
+						<li>Also a little data analysis/processing.</li>
+					</ol>
 				</section>
+				<section>
+					<h2>Why Excel is a bad!</h2>
+					<ul>
+						<li>You will lose your data.  It makes it far too easy to accidently change a data value and not notice.  It is much better to just read the data file in (but not write or edit it), and do your processing in a why that doesn't involve touching it.</li>
+						<li>It's graphs look terrible.</li>
+						<li>It's hard to see what formulas are being used because as soon as you click of the cell you just see the result.  So to check that all the equations are  correct to you have to go through and click every single cell.</li>
+						<li>You do waste a lot of time.  It's slow.  You want to change one thing about your data, or want to change something about the graph, and you have to redo everything  from scratch.  With this process, you change one line and you can run the same file on many different datasets.  You can get lots of graphs quickly and they'll have a consistent look and feel.</li>
+					</ul>
+				</section>
+
+
+
+
+
 
 				<section>
 					<h2>Tools
@@ -143,6 +173,14 @@
 0.163243E+00 -0.755952E+00 -0.700233E+00 -0.685305E+00 -0.338715E+00 -0.231713E+00 -0.216681E+00 -0.206267E+00 -0.197776E+00 -0.172631E+00 -0.157878E+00 -0.137568E+00 -0.131554E+00 -0.112499E+00 -0.989412E-01 -0.915173E-01 -0.865507E-01 -0.773424E-01 -0.572686E-01 -0.226281E-01  0.172997E-01  0.285411E-01  0.641710E-01  0.854221E-01  0.108895E+00  0.120782E+00  0.132134E+00  0.153451E+00  0.168480E+00  0.174859E+00  0.184854E+00  0.190687E+00
 0.244865E+00 -0.755882E+00 -0.700263E+00 -0.685258E+00 -0.340326E+00 -0.231403E+00 -0.216456E+00 -0.206108E+00 -0.197288E+00 -0.172174E+00 -0.158129E+00 -0.137422E+00 -0.129638E+00 -0.112744E+00 -0.989102E-01 -0.910672E-01 -0.836489E-01 -0.786875E-01 -0.572741E-01 -0.200726E-01  0.239895E-01  0.421957E-01  0.621442E-01  0.796474E-01  0.946831E-01  0.113549E+00  0.125752E+00  0.139979E+00  0.153823E+00  0.169540E+00  0.178134E+00  0.183255E+00
 0.326487E+00 -0.755854E+00 -0.700276E+00 -0.685239E+00 -0.340983E+00 -0.231300E+00 -0.216295E+00 -0.206094E+00 -0.197121E+00 -0.171934E+00 -0.158217E+00 -0.137341E+00 -0.128917E+00 -0.112935E+00 -0.989517E-01 -0.907824E-01 -0.821383E-01 -0.794659E-01 -0.573154E-01 -0.187068E-01  0.268747E-01  0.517633E-01  0.600813E-01  0.776488E-01  0.849822E-01  0.108718E+00  0.120552E+00  0.142525E+00  0.154564E+00  0.164456E+00  0.175574E+00  0.178877E+00
+0.408108E+00 -0.755882E+00 -0.700263E+00 -0.685258E+00 -0.340326E+00 -0.231403E+00 -0.216456E+00 -0.206108E+00 -0.197288E+00 -0.172174E+00 -0.158129E+00 -0.137422E+00 -0.129638E+00 -0.112744E+00 -0.989102E-01 -0.910672E-01 -0.836489E-01 -0.786875E-01 -0.572741E-01 -0.200726E-01  0.239895E-01  0.421957E-01  0.621442E-01  0.796475E-01  0.946832E-01  0.113549E+00  0.125752E+00  0.139979E+00  0.153823E+00  0.169539E+00  0.178133E+00  0.183254E+00
+	0.489730E+00 -0.755952E+00 -0.700233E+00 -0.685305E+00 -0.338715E+00 -0.231713E+00 -0.216681E+00 -0.206267E+00 -0.197776E+00 -0.172631E+00 -0.157878E+00 -0.137568E+00 -0.131554E+00 -0.112499E+00 -0.989412E-01 -0.915171E-01 -0.865507E-01 -0.773424E-01 -0.572686E-01 -0.226281E-01  0.172997E-01  0.285411E-01  0.641711E-01  0.854220E-01  0.108895E+00  0.120782E+00  0.132134E+00  0.153451E+00  0.168480E+00  0.174858E+00  0.184853E+00  0.190687E+00
+	0.571351E+00 -0.756021E+00 -0.700202E+00 -0.685352E+00 -0.337061E+00 -0.232084E+00 -0.216713E+00 -0.206576E+00 -0.198331E+00 -0.172982E+00 -0.157517E+00 -0.137442E+00 -0.133909E+00 -0.112606E+00 -0.991288E-01 -0.915804E-01 -0.888827E-01 -0.762505E-01 -0.573554E-01 -0.245172E-01  0.110668E-01  0.193704E-01  0.627134E-01  0.925741E-01  0.116479E+00  0.127518E+00  0.148403E+00  0.172338E+00  0.180474E+00  0.193883E+00  0.194725E+00  0.197847E+00
+	0.110658E+01 -0.755978E+00 -0.700269E+00 -0.685376E+00 -0.336738E+00 -0.231439E+00 -0.216052E+00 -0.206446E+00 -0.198398E+00 -0.173387E+00 -0.158762E+00 -0.137499E+00 -0.134454E+00 -0.112976E+00 -0.991719E-01 -0.912751E-01 -0.887450E-01 -0.761193E-01 -0.588293E-01 -0.251054E-01  0.902134E-02  0.201975E-01  0.647206E-01  0.942934E-01  0.118731E+00  0.128951E+00  0.151038E+00  0.169736E+00  0.179494E+00  0.185857E+00  0.195117E+00  0.202688E+00
+	0.118820E+01 -0.755925E+00 -0.700295E+00 -0.685342E+00 -0.338052E+00 -0.230918E+00 -0.215781E+00 -0.206049E+00 -0.198131E+00 -0.173414E+00 -0.159150E+00 -0.137857E+00 -0.132457E+00 -0.112795E+00 -0.989821E-01 -0.913411E-01 -0.867676E-01 -0.767560E-01 -0.590774E-01 -0.245919E-01  0.136886E-01  0.267778E-01  0.650724E-01  0.894192E-01  0.111672E+00  0.126186E+00  0.136349E+00  0.160452E+00  0.164377E+00  0.175379E+00  0.194705E+00  0.198603E+00
+	0.126982E+01 -0.755856E+00 -0.700326E+00 -0.685295E+00 -0.339678E+00 -0.230632E+00 -0.215614E+00 -0.205934E+00 -0.197528E+00 -0.173085E+00 -0.159154E+00 -0.137969E+00 -0.130395E+00 -0.112964E+00 -0.989461E-01 -0.909140E-01 -0.838854E-01 -0.781033E-01 -0.590804E-01 -0.226138E-01  0.200933E-01  0.386320E-01  0.645537E-01  0.816756E-01  0.107758E+00  0.116928E+00  0.127592E+00  0.142311E+00  0.145037E+00  0.156824E+00  0.187848E+00  0.202052E+00
+	0.135145E+01 -0.755810E+00 -0.700344E+00 -0.685263E+00 -0.340674E+00 -0.230640E+00 -0.215775E+00 -0.206018E+00 -0.196982E+00 -0.172513E+00 -0.159057E+00 -0.137793E+00 -0.129271E+00 -0.113188E+00 -0.989972E-01 -0.904043E-01 -0.820207E-01 -0.795136E-01 -0.587084E-01 -0.195398E-01  0.236176E-01  0.518826E-01  0.624552E-01  0.817378E-01  0.888031E-01  0.112308E+00  0.123894E+00  0.131172E+00  0.146593E+00  0.152229E+00  0.174131E+00  0.188105E+00
+	0.143307E+01 -0.755815E+00 -0.700338E+00 -0.685265E+00 -0.340491E+00 -0.230895E+00 -0.216360E+00 -0.206132E+00 -0.196717E+00 -0.172209E+00 -0.158920E+00 -0.137657E+00 -0.129431E+00 -0.113058E+00 -0.989509E-01 -0.903946E-01 -0.833270E-01 -0.792863E-01 -0.580660E-01 -0.179669E-01  0.214776E-01  0.514468E-01  0.637983E-01  0.840034E-01  0.885597E-01  0.113033E+00  0.117043E+00  0.135064E+00  0.150746E+00  0.156523E+00  0.166736E+00  0.185437E+00
 </code></pre>
 				</section>
 
@@ -263,8 +301,10 @@ fig2.savefig('numpy_graphing2')
 				<section>
 					<h2>
 					</h2>
-					<p>Importantly, all the points are covering each other up and it's hard to tell how dense certain parts are.  Unimportantly this google graph just looks amateurish.
-					</p>
+					<ul>
+					<li>All the points are covering each other up and it's hard to tell how dense certain parts are.</li>  <br />
+					<li>This google graph just looks amateurish.</li>
+					</ul>
 				</section>
 
 				<section>
@@ -674,8 +714,6 @@ plt.savefig('andrews')
 	<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/assets/bokeh3.png" alt="" style="width: 700px;"/>
 </section>
 
-
-
 				<section>
 					<p>A few more libraries to consider looking into.</p><br />
 					<ul>
@@ -683,6 +721,57 @@ plt.savefig('andrews')
 						<li>Bokeh: interactive python graphics for the web.</li>
 					</ul>
 				</section>
+
+				<section>
+					<h2>What else can Pandas do?</h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Pretty much everything Excel can do and a lot more.</p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+				<section>
+					<h2></h2>
+					<p></p>
+				</section>
+
+
 
 
 				<section>
