@@ -26,6 +26,7 @@
     <SUITE FILE_PATH="coverage/source$numpy_graphing_interactive.coverage" NAME="numpy_graphing_interactive Coverage Results" MODIFIED="1423531072043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$egg_no_err.coverage" NAME="egg_no_err Coverage Results" MODIFIED="1422507555731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$pandas_text_import.coverage" NAME="pandas_text_import Coverage Results" MODIFIED="1422732596322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/source$image_proc.coverage" NAME="image_proc Coverage Results" MODIFIED="1423538759017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$numpy_to_dataframe.coverage" NAME="numpy_to_dataframe Coverage Results" MODIFIED="1422557076619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$line_w_error.coverage" NAME="line_w_error Coverage Results" MODIFIED="1422503495509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/source$pretty_egg.coverage" NAME="pretty_egg Coverage Results" MODIFIED="1422748103361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -57,52 +58,18 @@
       <file leaf-file-name="pretty_egg.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pretty_egg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="930">
-              <caret line="39" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="930">
+              <caret line="56" column="12" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lines1_inter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lines1_inter.py">
+      <file leaf-file-name="image_proc.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/image_proc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1622" max-vertical-offset="2085">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="133" selection-end-column="32" />
-              <folding>
-                <element signature="e#21#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="numpy_graphing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numpy_graphing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="555">
-              <caret line="0" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="numpy_graphing_interactive.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/numpy_graphing_interactive.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7408207" vertical-offset="47" max-vertical-offset="510">
-              <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-              <folding>
-                <element signature="e#21#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lines1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lines1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="1935">
-              <caret line="124" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="71" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="463">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -133,6 +100,7 @@
         <option value="$PROJECT_DIR$/pretty_egg_interactive.py" />
         <option value="$PROJECT_DIR$/lines1_inter.py" />
         <option value="$PROJECT_DIR$/numpy_graphing_interactive.py" />
+        <option value="$PROJECT_DIR$/image_proc.py" />
       </list>
     </option>
   </component>
@@ -219,27 +187,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.numpy_graphing_interactive">
-    <configuration default="false" name="pretty_egg" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="source" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pretty_egg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.image_proc">
     <configuration default="false" name="hex_interact" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -314,6 +262,26 @@
       <module name="source" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/numpy_graphing_interactive.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="image_proc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="source" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_proc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PythonRunner" />
@@ -530,19 +498,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.hex_scatter" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pretty_egg" />
-      <item index="2" class="java.lang.String" itemvalue="Python.hex_interact" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pretty_egg_interactive" />
-      <item index="4" class="java.lang.String" itemvalue="Python.lines1_inter" />
-      <item index="5" class="java.lang.String" itemvalue="Python.numpy_graphing_interactive" />
+      <item index="1" class="java.lang.String" itemvalue="Python.hex_interact" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pretty_egg_interactive" />
+      <item index="3" class="java.lang.String" itemvalue="Python.lines1_inter" />
+      <item index="4" class="java.lang.String" itemvalue="Python.numpy_graphing_interactive" />
+      <item index="5" class="java.lang.String" itemvalue="Python.image_proc" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.numpy_graphing_interactive" />
-        <item index="1" class="java.lang.String" itemvalue="Python.lines1_inter" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pretty_egg_interactive" />
-        <item index="3" class="java.lang.String" itemvalue="Python.hex_interact" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pretty_egg" />
+        <item index="0" class="java.lang.String" itemvalue="Python.image_proc" />
+        <item index="1" class="java.lang.String" itemvalue="Python.numpy_graphing_interactive" />
+        <item index="2" class="java.lang.String" itemvalue="Python.lines1_inter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pretty_egg_interactive" />
+        <item index="4" class="java.lang.String" itemvalue="Python.hex_interact" />
       </list>
     </recent_temporary>
   </component>
@@ -576,7 +544,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26618123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20678514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20678514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -910,47 +878,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pretty_egg.py">
+    <entry file="file://$PROJECT_DIR$/numpy_graphing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="930">
-          <caret line="39" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.19870411" vertical-offset="92" max-vertical-offset="555">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lines1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1558" max-vertical-offset="1935">
-          <caret line="124" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="124" selection-end-column="71" />
+        <state vertical-scroll-proportion="0.28725702" vertical-offset="1472" max-vertical-offset="1935">
+          <caret line="108" column="33" selection-start-line="108" selection-start-column="33" selection-end-line="108" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_graphing.py">
+    <entry file="file://$PROJECT_DIR$/pretty_egg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="467" max-vertical-offset="930">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lines1_inter.py">
+    <entry file="file://$PROJECT_DIR$/image_proc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1622" max-vertical-offset="2085">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="133" selection-end-column="32" />
-          <folding>
-            <element signature="e#21#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/numpy_graphing_interactive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7408207" vertical-offset="47" max-vertical-offset="510">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="e#21#52#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="463">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

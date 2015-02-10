@@ -916,26 +916,12 @@ plt.savefig('pretty-eggs', bbox_inches="tight")
 						<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/percent-bachelors-degrees-women-usa.png" alt="" style="width: 700px;"/>
 					</section>
 
-					<section>
-						<p>
-						</p>
-						<div>
-								<a href="https://plot.ly/~toperkin/22/" target="_blank" title="Band" style="display: block; text-align: center;"><img src="https://plot.ly/~toperkin/22.png" alt="Band" width="700px" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-								<script data-plotly="toperkin:22" src="https://plot.ly/embed.js" async></script>
-						</div>
-
-				</section>
-
-
-
 				<section>
 					<h2>
 					</h2>
 					<p><a href="https://github.com/toperkin/ClemsonIntroPythonSp15/blob/gh-pages/source/lines1.py">Let's go back to github to see how I did it.</a>
 					</p>
 				</section>
-
-
 
 				<section>
 					<p>You are running with a rough crowd and have higher dimensional data to display?</p>
@@ -944,8 +930,6 @@ plt.savefig('pretty-eggs', bbox_inches="tight")
 				<section>
 					<p>Here's some obvious things you can do:</p>
 				</section>
-
-
 
 			<section>
 				<p>
@@ -1072,30 +1056,104 @@ plt.savefig('andrews')
 					</ul>
 				</section>
 
-				<!--section>
-					<h2>What else can Pandas do?</h2>
+				<section>
+					<h2>Let's do a little image processing.</h2>
 					<p></p>
 				</section>
 				<section>
-					<h2></h2>
-					<p>Pretty much everything Excel can do and a lot more.</p>
+					<h2>OpenCV</h2>
+					<p>This library does not come installed with the Anaconda Package</p>
 				</section>
 
 				<section>
 					<h2></h2>
-					<p></p>
+					<p>With python installing a new library is easy.</p><br />
+					<p>Just open a terminal and type:</p><br />
+					<p>pip install NameOfTheLibraryYouWantHere</p><br />
+					<p>also good</p><br />
+					<p>conda install NameOfTheLibraryYouWantHere</p>
 				</section>
 				<section>
 					<h2></h2>
-					<p></p>
+					<p>Here's a pretty picture:</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/usf_cloister_banyan.jpg" alt="" style="width: 700px;"/>
 				</section>
 				<section>
 					<h2></h2>
-					<p></p>
+					<p>Let's find it's edges.</p>
+<pre><code>
+# image_proc.py
+
+import cv2
+
+img = cv2.imread('usf_cloister_banyan.jpg')
+
+for threshold in range(10, 250, 20):
+  edgy = cv2.Canny(img, threshold, threshold)
+  #cv2.imshow(str(threshold), edgy)
+  #cv2.waitKey(0)
+  cv2.imwrite('threshold'+str(threshold)+'.png', edgy)
+</code></pre>
 				</section>
 				<section>
 					<h2></h2>
-					<p></p>
+					<p>Threshold = 10</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold10.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 30</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold30.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 50</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold50.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 70</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold70.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 90</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold90.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 110</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold110.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 130</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold130.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 150</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold150.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 170</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold170.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 190</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold190.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 210</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold210.png" alt="" style="width: 700px;"/>
+				</section>
+				<section>
+					<h2></h2>
+					<p>Threshold = 230</p>
+					<img src="http://toperkin.github.io/ClemsonIntroPythonSp15/source/threshold230.png" alt="" style="width: 700px;"/>
 				</section>
 				<section>
 					<h2></h2>
